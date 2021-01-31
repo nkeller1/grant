@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require './soulation'
+require './lib/soulation'
 
 class SoulationTest < Minitest::Test
 
