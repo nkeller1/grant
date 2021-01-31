@@ -1,5 +1,3 @@
-
-
   def soulation(a)
     sorted_array = a.select do |x|
       x >= 1
