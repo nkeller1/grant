@@ -24,15 +24,15 @@ def solution(a, b)
     if b.length != b.uniq.length
       accum += (b.length.to_i - b.uniq.length.to_i)
     end
-    
+
     a.uniq do |a_letter|
-      if b.include?(a_letter) == false
+      if !b.include?(a_letter)
         accum +=1
       end
     end
 
     b.uniq do |b_letter|
-      if a.include?(b_letter) == false
+      if !.include?(b_letter)
         accum +=1
       end
     end
