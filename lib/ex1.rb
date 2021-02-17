@@ -1,7 +1,7 @@
 
 def solution(a, b)
-  a = a.split(//)
-  b = b.split(//)
+  a = a.downcase.split(//)
+  b = b.downcase.split(//)
   accum = 0
 
   if a.length == b.length

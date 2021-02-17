@@ -32,4 +32,12 @@ class Ex1Test < Minitest::Test
     assert_equal x, 0
   end
 
+  def test_capital_letters
+    a = 'Bat'
+    b = 'Crap'
+    x = solution(a,b)
+    # needs to lowercase and add r, b, p, c, t
+    assert_equal x, 5
+  end
+
 end
