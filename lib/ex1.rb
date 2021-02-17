@@ -1,3 +1,4 @@
+
 def solution(a, b)
   a = a.split(//)
   b = b.split(//)
@@ -32,14 +33,10 @@ def solution(a, b)
     end
 
     b.uniq do |b_letter|
-      if !.include?(b_letter)
+      if !b.include?(b_letter)
         accum +=1
       end
     end
   end
   accum
 end
-
-a = 'harder'
-b = 'rather'
-puts solution(a, b)
